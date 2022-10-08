@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Global primary sources of energy consumptionssss",
+    "title": "Global primary sources of energy consumptions",
     "width": 500,
     "height": 400,
     "layer": [
