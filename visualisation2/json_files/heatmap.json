@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 10 countries for renewable energy production",
+    "width": 500,
+    "height": 400,
+    "data": {
+        "url": "data/countryRenewablePowerGeneration.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "y": {
+            "field": "Country",
+            "type": "nominal"
+        },
+        "x": {
+            "field": "Power Generation (TWh)",
+            "type": "quantitative"
+        },
+        "xOffset": {
+            "field": "Renewable energy source"
+        },
+        "color": {
+            "field": "Renewable energy source"
+        },
+        "tooltip": [
+            {
+                "field": "Country",
+                "type": "nominal"
+            },
+            {
+                "field": "Renewable energy source",
+                "type": "nominal"
+            },
+            {
+                "field": "Power Generation (TWh)",
+                "type": "quantitative"
+            }
+        ]
+    }
+}

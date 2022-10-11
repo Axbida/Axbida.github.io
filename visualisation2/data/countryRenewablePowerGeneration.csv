@@ -1,0 +1,31 @@
+Country,Renewable energy source,Power Generation (TWh)
+China,Hydro,1189.84
+China,Biofuel,295.02
+China,Solar PV,79.43
+USA,Hydro,315.62
+USA,Biofuel,277.91
+USA,Solar PV,58.95
+Brazil,Hydro,370.9
+Brazil,Biofuel,42.37
+Brazil,Solar PV,52.25
+Canada,Hydro,383.48
+Canada,Biofuel,29.65
+Canada,Solar PV,7.12
+India,Hydro,141.8
+India,Biofuel,51.06
+India,Solar PV,43.76
+Germany,Hydro,24.17
+Germany,Biofuel,111.59
+Germany,Solar PV,45.1
+Russia,Hydro,187.13
+Russia,Biofuel,0.14
+Russia,Solar PV,0.08
+Japan,Hydro,90.67
+Japan,Biofuel,7.63
+Japan,Solar PV,19.01
+France,Hydro,70.13
+France,Biofuel,28.5
+France,Solar PV,5.87
+Italy,Hydro,50.92
+Italy,Biofuel,17.49
+Italy,Solar PV,16.85
