@@ -1,7 +1,6 @@
-Mode of Generation,Contribution (TWh)
-Hydro,9863.33
-Wind,5882.82
-Biofuel,2636.03
-Solar PV,841.87
-Geothermal,114.04
-Tidal,19448.16
+Mode of Generation,Contribution (TWh),Total,Percentage
+Hydro,9863.33,38786.25,25.43%
+Wind,5882.82,38786.25,15.17%
+Biofuel,2636.03,38786.25,6.80%
+Tidal,19448.16,38786.25,50.14%
+Geothermal and Solar PV,955.91,38786.25,2.46%

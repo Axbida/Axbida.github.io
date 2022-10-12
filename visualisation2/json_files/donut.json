@@ -1,20 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Total power generation from renewable sources",
-    "width": 500,
+    "width": 515,
     "height": 400,
     "data": {
         "url": "data/renewablesTotalPowerGeneration.csv"
     },
-    "mark": {
-        "type": "arc",
-        "outerRadius": 180,
-        "stroke": "#fff"
-    },
     "encoding": {
         "theta": {
             "field": "Contribution (TWh)",
-            "type": "quantitative"
+            "type": "quantitative",
+            "stack": true
         },
         "color": {
             "field": "Mode of Generation",
@@ -30,5 +26,27 @@
                 "type": "quantitative"
             }
         ]
-    }
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "arc",
+                "outerRadius": 160,
+                "stroke": "#fff"
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "outerRadius": 185,
+                "align": "center",
+                "size": 14
+            },
+            "encoding": {
+                "text": {
+                    "field": "Percentage"
+                }
+            }
+        }
+    ]
 }
