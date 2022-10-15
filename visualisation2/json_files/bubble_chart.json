@@ -3,63 +3,252 @@
     "title": "Energy consumption vs CO2 emissions (2021)",
     "width": 450,
     "height": 300,
-    "data": {
-        "url": "data/co2-emissions-vs-energy-consumption.csv"
-    },
-    "params": [
+    "layer": [
         {
-            "name": "view",
-            "select": "interval",
-            "bind": "scales"
+            "data": {
+                "url": "data/co2-emissions-vs-energy-consumption.csv"
+            },
+            "params": [
+                {
+                    "name": "view",
+                    "select": "interval",
+                    "bind": "scales"
+                }
+            ],
+            "mark": "circle",
+            "encoding": {
+                "x": {
+                    "field": "Primary energy consumption (exajoules)",
+                    "type": "quantitative",
+                    "scale": {
+                        "type": "log",
+                        "domain": [
+                            0.3,
+                            200
+                        ]
+                    }
+                },
+                "y": {
+                    "field": "CO2 emissions (million tonnes)",
+                    "type": "quantitative",
+                    "scale": {
+                        "type": "log",
+                        "domain": [
+                            20,
+                            20000
+                        ]
+                    }
+                },
+                "size": {
+                    "field": "Population (milllion)",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "Region"
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Region",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Population (milllion)",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "Primary energy consumption (exajoules)",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "CO2 emissions (million tonnes)",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 127.65,
+                        "b": 10523
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "China"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "field": "a",
+                    "type": "quantitative",
+                    "title": "Primary energy consumption (exajoules)"
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "CO2 emissions (million tonnes)"
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 28.43,
+                        "b": 2552.8
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "India"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "field": "a",
+                    "type": "quantitative",
+                    "title": "Primary energy consumption (exajoules)"
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "CO2 emissions (million tonnes)"
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 0.86,
+                        "b": 68.9
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "Morocco"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "field": "a",
+                    "type": "quantitative",
+                    "title": "Primary energy consumption (exajoules)"
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "CO2 emissions (million tonnes)"
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 152.97,
+                        "b": 4701.1
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "US"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "field": "a",
+                    "type": "quantitative",
+                    "title": "Primary energy consumption (exajoules)"
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "CO2 emissions (million tonnes)"
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 7.31,
+                        "b": 572.5
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "Indonesia"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "field": "a",
+                    "type": "quantitative",
+                    "title": "Primary energy consumption (exajoules)"
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "CO2 emissions (million tonnes)"
+                }
+            }
         }
-    ],
-    "mark": "circle",
-    "encoding": {
-        "x": {
-            "field": "Primary energy consumption (exajoules)",
-            "type": "quantitative",
-            "scale": {
-                "type": "log",
-                "domain": [0.3, 200]
-            }
-        },
-        "y": {
-            "field": "CO2 emissions (million tonnes)",
-            "type": "quantitative",
-            "scale": {
-                "type": "log",
-                "domain": [20, 20000]
-                
-            }
-        },
-        "size": {
-            "field": "Population (milllion)",
-            "type": "quantitative"
-        },
-        "color": {
-            "field": "Region"
-        },
-        "tooltip": [
-            {
-                "field": "Country",
-                "type": "nominal" 
-            },
-            {
-                "field": "Region",
-                "type": "nominal" 
-            },
-            {
-                "field": "Population (milllion)",
-                "type": "quantitative" 
-            },
-            {
-                "field": "Primary energy consumption (exajoules)",
-                "type": "quantitative" 
-            },
-            {
-                "field": "CO2 emissions (million tonnes)",
-                "type": "quantitative" 
-            }
-        ]
-    }
+    ]
 }

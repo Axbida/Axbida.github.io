@@ -64,7 +64,8 @@
                         },
                         "key": "Entity",
                         "fields": [
-                            "Primary energy consumption per capita (kWh/person)", "Year"
+                            "Primary energy consumption per capita (kWh/person)",
+                            "Year"
                         ]
                     }
                 },
@@ -110,6 +111,186 @@
                         "type": "quantitative"
                     }
                 ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": -4,
+                        "b": -4
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "Africa"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": -29,
+                        "b": 41.3
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "Europe"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 135,
+                        "b": 23
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "Asia"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": 99,
+                        "b": -40
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "Australia"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": -860,
+                        "b": 16.8
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "North America"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "a": -830,
+                        "b": -24
+                    }
+                ]
+            },
+            "mark": "text",
+            "encoding": {
+                "text": {
+                    "value": "South America"
+                },
+                "longitude": {
+                    "field": "a",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "b",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "value": 15
+                },
+                "opacity": {
+                    "value": 1
+                }
             }
         }
     ]
