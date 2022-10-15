@@ -1,8 +1,21 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Primary energy consumption per capita (kWh/person)",
+    "title": "Primary energy consumption per capita (kWh/person) 2021",
     "width": 530,
     "height": 400,
+    "params": [
+        {
+            "name": "Energy_consumption_selection",
+            "value": 0,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 80000,
+                "step": 20000,
+                "name": "Energy consumption greater than: "
+            }
+        }
+    ],
     "projection": {
         "type": "equalEarth"
     },
@@ -51,9 +64,12 @@
                         },
                         "key": "Entity",
                         "fields": [
-                            "Primary energy consumption per capita (kWh/person)"
+                            "Primary energy consumption per capita (kWh/person)", "Year"
                         ]
                     }
+                },
+                {
+                    "filter": "datum['Primary energy consumption per capita (kWh/person)'] > Energy_consumption_selection"
                 }
             ],
             "mark": {

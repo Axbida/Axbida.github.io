@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Top 10 countries for renewable energy production",
+    "title": "Top 10 countries for renewable energy production (2021)",
     "width": 450,
-    "height": 400,
+    "height": 370,
     "data": {
         "url": "data/countryRenewablePowerGeneration.csv"
     },
@@ -10,7 +10,8 @@
     "encoding": {
         "y": {
             "field": "Country",
-            "type": "nominal"
+            "type": "nominal",
+            "sort": "-x"
         },
         "x": {
             "field": "Power Generation (TWh)",
@@ -20,7 +21,11 @@
             "field": "Renewable energy source"
         },
         "color": {
-            "field": "Renewable energy source"
+            "field": "Renewable energy source",
+            "scale":{
+                "domain": ["Biofuel", "Hydro", "Solar PV"],
+                "range": ["#73562a", "#66c6d1" , "#e83f4d"]
+            }
         },
         "tooltip": [
             {

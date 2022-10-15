@@ -26,3 +26,16 @@ vegaEmbed("#heatmap", vg_4).then(function (result) {
     
 }).catch(console.error);
 
+var vg_5 = "json_files/bubble_chart.json";
+vegaEmbed("#bubble", vg_5).then(function (result) {
+
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    
+}).catch(console.error);
+
+var vg_6 = "json_files/waterfall.json";
+vegaEmbed("#waterfall", vg_6).then(function (result) {
+
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    
+}).catch(console.error);

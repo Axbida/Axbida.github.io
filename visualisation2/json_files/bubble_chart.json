@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Energy consumption vs CO2 emissions (2021)",
+    "width": 450,
+    "height": 300,
+    "data": {
+        "url": "data/co2-emissions-vs-energy-consumption.csv"
+    },
+    "params": [
+        {
+            "name": "view",
+            "select": "interval",
+            "bind": "scales"
+        }
+    ],
+    "mark": "circle",
+    "encoding": {
+        "x": {
+            "field": "Primary energy consumption (exajoules)",
+            "type": "quantitative",
+            "scale": {
+                "type": "log",
+                "domain": [0.3, 200]
+            }
+        },
+        "y": {
+            "field": "CO2 emissions (million tonnes)",
+            "type": "quantitative",
+            "scale": {
+                "type": "log",
+                "domain": [20, 20000]
+                
+            }
+        },
+        "size": {
+            "field": "Population (milllion)",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "Region"
+        },
+        "tooltip": [
+            {
+                "field": "Country",
+                "type": "nominal" 
+            },
+            {
+                "field": "Region",
+                "type": "nominal" 
+            },
+            {
+                "field": "Population (milllion)",
+                "type": "quantitative" 
+            },
+            {
+                "field": "Primary energy consumption (exajoules)",
+                "type": "quantitative" 
+            },
+            {
+                "field": "CO2 emissions (million tonnes)",
+                "type": "quantitative" 
+            }
+        ]
+    }
+}

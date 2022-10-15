@@ -6,6 +6,7 @@
     "data": {
         "url": "data/renewablesTotalPowerGeneration.csv"
     },
+    
     "encoding": {
         "theta": {
             "field": "Contribution (TWh)",
@@ -14,7 +15,23 @@
         },
         "color": {
             "field": "Mode of Generation",
-            "type": "nominal"
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                    "Biofuel",
+                    "Geothermal and Solar PV",
+                    "Hydro",
+                    "Tidal",
+                    "Wind"
+                ],
+                "range": [
+                    "#73562a",
+                    "#faa237",
+                    "#66c6d1",
+                    "#5f90de",
+                    "#5e668f"
+                ]
+            }
         },
         "tooltip": [
             {

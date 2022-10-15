@@ -3,7 +3,6 @@
     "title": "Global primary sources of energy consumptions",
     "width": 490,
     "height": 365,
-    
     "layer": [
         {
             "data": {
@@ -62,9 +61,11 @@
         {
             "data": {
                 "values": [
-                  {"a": 1840, "b": 40000}
-               ]
-             },
+                    {
+                        "b": 20000
+                    }
+                ]
+            },
             "mark": {
                 "type": "text",
                 "align": "right",
@@ -73,12 +74,115 @@
                 "fontStyle": "italic"
             },
             "encoding": {
-                "text": {"value": ["Oil surpasses coal in 1964 to become", "the largest primary source of energy consumpttion"]},
-                "color":{"value":"black"},
-                "x": {"field": "a", "type": "temporal", "title":"Year"},
-                "y": {"field": "b", "type": "quantitative", "title":"Substituted energy (TWh)"}  
-            }      
+                "text": {
+                    "value": [
+                        "Oil surpasses coal in 1964 to become",
+                        "the largest primary source of energy consumption"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "datum": {
+                        "year": 1964
+                    }
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "Substituted energy (TWh)"
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "b": 50000
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {
+                    "value": [
+                        "Oil, Gas and Coal lead the current market",
+                        "of energy source"
+                    ]
+                },
+                "color": {
+                    "value": "black"
+                },
+                "x": {
+                    "datum": {
+                        "year": 2005
+                    }
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": "Substituted energy (TWh)"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "rule",
+                "strokeDash": [
+                    2,
+                    2
+                ],
+                "size": 2
+            },
+            "data": {
+                "values": [
+                    {}
+                ]
+            },
+            "encoding": {
+                "x": {
+                    "datum": {
+                        "year": 1840
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "b": 40000
+                    }
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "align": "left"
+            },
+            "encoding": {
+                "text": {
+                    "value": "Industrial revolution"
+                },
+                "x": {
+                    "datum": {
+                        "year": 1842
+                    }
+                },
+                "y": {
+                    "field": "b",
+                    "type": "quantitative",
+                    "title": ""
+                }
+            }
         }
     ]
-    
 }
